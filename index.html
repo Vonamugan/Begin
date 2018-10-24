@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<h1>Border Radius generator</h1>
+
+<div class="holder">
+    <div class="row"><span class="spanOne">Верхний левый угол:</span>
+        <span><input type="range" name="rangeTL" id="borderTopLeftRadius" min="0" max="150" step="1" value="0" class="inpRange"></span>
+        <span><input type="text" name="dataTL" id="dataTopLeft" placeholder="0" class="inpText"></span>
+    </div>
+    <div class="row"><span class="spanOne">Верхний правый угол:</span>
+        <span><input type="range" name="rangeTR" id="borderTopRightRadius" min="0" max="150" step="1" value="0"  class="inpRange"></span>
+        <span><input type="text" name="dataTR" id="dataTopRight" placeholder="0" class="inpText"></span>
+    </div>
+    <div class="row"><span class="spanOne">Нижний правый угол:</span>
+        <span><input type="range" name="rangeBR" id="borderBottomRightRadius" min="0" max="150" step="1" value="0"  class="inpRange"></span>
+        <span><input type="text" name="dataBR" id="dataBottomRight" placeholder="0" class="inpText"></span>
+    </div>
+    <div class="row"><span class="spanOne">Нижний левый угол:</span>
+        <span><input type="range" name="rangeBL" id="borderBottomLeftRadius" min="0" max="150" step="1" value="0"  class="inpRange"></span>
+        <span><input type="text" name="dataBL" id="dataBottomLeft" placeholder="0" class="inpText"></span>
+        </div>
+
+    <div class="block_wrap">
+        <div class="block_row">
+            <div class="block">
+                <span class="topLeft corner" data-corner="borderTopLeftRadius">0px</span>
+                <span class="topRight corner" data-corner="borderTopRightRadius">0px</span>
+                <span class="bottomRight corner" data-corner="borderBottomRightRadius">0px</span>
+                <span class="bottomLeft corner" data-corner="borderBottomLeftRadius">0px</span>
+            </div>
+            <div class="block_copy">
+                <span class="property">border-radius:</span>
+                <span class="dataValue">0;</span>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
